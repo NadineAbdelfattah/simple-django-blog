@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    This post title
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock %}
+
+{% block content %}
+    <section id="summary">
+        <h2>Post title</h2>
+        <article>
+            <img src="{% static 'blog/images/mountain.jpg' %}" alt="post title">
+            <address>By Nadine</address>
+            <div>
+                Last updated on <time>July 10th </time>
+            </div>
+        </article>
+    </section>
+    <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nam sollicitudin neque vitae tristique consectetur.
+            Phasellus in ante porta, faucibus odio id, dictum ipsum.
+            Vivamus sit amet neque id tortor laoreet feugiat sed ut elit.
+            Mauris euismod pellentesque semper.
+        </p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nam sollicitudin neque vitae tristique consectetur.
+            Phasellus in ante porta, faucibus odio id, dictum ipsum.
+            Vivamus sit amet neque id tortor laoreet feugiat sed ut elit.
+            Mauris euismod pellentesque semper.
+        </p>
+    </main>
+{% endblock %}
