@@ -1,22 +1,22 @@
 {% load static %}
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
     {% block css_files %} {% endblock %}
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="{% static 'app.css' %}">
+    <link rel="stylesheet" href=""/>
+  </head>
 
-</head>
-
-<body>
-  <header id="main-navigation">
-    <h1><a href="{% url 'starting-page' %}">Django Blog</a></h1>
-    <nav><a href="{% url 'posts-page' %}">All Posts</a></nav>
-  </header>
-{% block content %}
-{% endblock %}
-</body>
+  <body>
+    <header id="main-navigation">
+      <h1><a href="{% url 'starting-page' %}">Django Blog</a></h1>
+      <nav>
+        <a href="{% url 'read-later' %}">Read Later Posts</a>
+        <a href="{% url 'posts-page' %}">All Posts</a>
+      </nav>
+    </header>
+    {% block content %} {% endblock %}
+  </body>
 </html>
