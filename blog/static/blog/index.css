@@ -1,10 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+html{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+h1, h2, h3, a{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: blueviolet;
+}
+
 #main-navigation{
-    width: 100%;
+    width: 80%;
     height: 5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 10%;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 }
@@ -13,16 +30,11 @@
     text-decoration: none;
     color: white;
     font-weight: bold;
+    margin-left: 1rem;
 }
-
 #main-navigation a:hover,
-#main-navigation a:active {
+#main-navigation a:active{
     color: #cf79f1;
-}
-
-#main-navigation h1 a:hover,
-#main-navigation h1 a:active {
-    color: white;
 }
 
 #welcome{
@@ -115,7 +127,7 @@
 }
 
 .post a:hover,
-.post a: active{
+.post a:active{
     transform: scale(1.1);
     background-color: #390281;
     color: white;
